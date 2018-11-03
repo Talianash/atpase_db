@@ -41,7 +41,7 @@ class ATPase(db.Model):
 
 class Operon(db.Model):
 	id = db.Column(db.Integer, primary_key = True)
-	number = db.Column(db.Integer, default = 1, unique = False)
+	operon_type = db.Column(db.String(50), default = 'not_stated', unique = False) #changed_V2
 	atpase_id = db.Column(db.Integer, db.ForeignKey('atpases.id'))
 	organism_id = db.Column(db.Integer, db.ForeignKey('organisms.id'))
 	sequence = db.relationship('Sequence', backref = 'operon', lazy = 'dynamic')
@@ -56,7 +56,7 @@ class Sequence(db.Model):
 	sequence = db.Column(db.String(500), unique = False)
 	start = db.Column(db.Integer, unique = False)
 	stop = db.Column(db.Integer, unique = False)
-	seq_operon_number = db.Column(db.Integer, unique = False)
+	direction = db.Column(db.String(10), unique = False) # added V2
 	seq_comment = db.Column(db.String(500), unique = False)
 	operon_id = db.Column(db.Integer, db.ForeignKey('operon.id'))
 

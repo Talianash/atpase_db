@@ -1,0 +1,154 @@
+-----------------------Acidaminococcus intestini-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Aerococcus urinae-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Aminobacterium colombiense-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Anaerobaculum mobile-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Anaerococcus prevotii-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Archaeoglobus fulgidus-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Eubacterium limosum-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Fibrobacter succinogenes-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Finegoldia magna-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Gordonibacter pamelaeae-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Halalkalicoccus jeotgali-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Halanaerobium hydrogeniformans-----------------------
+Warning! Id is not stated
+-----------------------Haloarcula marismortui-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Halogeometricum borinquense-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Herminiimonas arsenicoxydans-----------------------
+Warning! Id is not stated
+-----------------------Meiothermus silvanus-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Methanocaldococcus jannaschii-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Methanocella arvoryzae-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Methanoregula formicica-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Methanospirillum hungatei-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Methanothermococcus okinawensis-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Methanothermus fervidus-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Methanotorris igneus-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Methylophaga nitratireducenticrescens-----------------------
+Warning! Id is not stated
+-----------------------Modestobacter marinus-----------------------
+Warning! Id is not stated
+-----------------------Rhodanobacter denitrificans-----------------------
+Warning! Id is not stated
+-----------------------Simkania negevensis-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Sphaerochaeta pleomorpha-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Spirochaeta smaragdinae-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Sulfolobus solfataricus-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Tepidanaerobacter acetatoxydans-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Thermanaerovibrio acidaminovorans-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Thermovirga lienii-----------------------
+Warning! FoF1 type is not stated
+Warning! Operon number is not stated
+Warning! No subunits found
+Warning! Subunit names are not stated
+-----------------------Thiomonas arsenitoxydans-----------------------
+Warning! Id is not stated
+-----------------------Zobellia galactanivorans-----------------------
+Warning! Id is not stated
