@@ -1,0 +1,14 @@
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Search</h2>
+<form style = "display: inline;", action="{{url_for('search')}}" method="post" name="search">
+    {{form.hidden_tag()}}
+    <p>
+        Enter source:<br>
+        {{form.search(size=80)}}<br>
+    </p>
+    <p><input type="submit" value="Search"></p>
+</form>
+{% endblock %}

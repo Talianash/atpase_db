@@ -1,0 +1,14 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Search results for "{{query}}":</h2>
+<table class="search_res_organism">
+	<tr valign="top"> 
+		<th>Organism name</th><th>Type</th><th>FoF1 number</th><th>Operon number</th><th>Subunit list</th>
+	</tr>
+{% for res in results %}
+{% include 'result.html' %}
+{% endfor %}
+</table>
+{% endblock %}

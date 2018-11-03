@@ -1,0 +1,24 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<h2>{{org.name}}</h1>
+<p>Taxonomy: {{org.taxonomy}}</p>
+<table class="atpase-info">
+    {% for j in org.atpase %}
+	<tr valign="top"> 
+    	<td>{{j.fof1_type}}</td><td>{% for u in j.operon %} operon {{u.number}}; {% endfor %}</td><td>{{j.subunit_list}}</td>
+	</tr>
+	{% endfor%}
+{% for i in org.operon %}
+<table class="operon-info">
+    <caption><h3>{{i.enzyme.fof1_type}}: operon {{i.number}}</h3></caption>
+	<tr valign="top"> 
+		<th>Subunit</th><th>Start</th><th>End</th><th>Sequence</th>
+	</tr>
+{% for k in i.sequence %}
+{% include 'seq.html' %}
+{% endfor %}
+{% endfor %}
+</table>
+{% endblock %}

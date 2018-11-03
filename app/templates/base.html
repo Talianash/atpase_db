@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ATP-synthase: search</title>
+    <style type="text/css">
+      * {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #22004D;
+}
+
+a.menu-link {
+  color: white;
+  text-decoration: none
+}
+
+a.menu-link:visited {
+  color: white;
+  text-decoration: none
+}
+
+.header {
+  background-color: #6D1AD7;
+  border-bottom: 1px solid;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.layout {
+  }
+
+.header-column {
+  padding-top: 20px;
+  height: 40px;
+  color: white;
+  border-left: 1px solid #22004D;
+}
+
+.logo {
+  color: white;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  padding-left: 20px;
+  border-left: none;
+  padding-top: 20px;
+  width: auto;
+  height: auto;
+  float: left;
+  margin-left: 10%;  
+}
+
+.menu {
+  font-size: 110%;
+  float: right;
+  min-width: 100px;
+  text-align: center;
+  transition: 0.3s linear;
+
+}
+
+.menu:hover {
+  background-color: #5C4080;
+}
+
+.menu4 {
+  margin-right: 5%;
+  border-right: 1px solid #22004D;
+}
+
+.main{
+  background-color: #FBF8FF;
+  padding: 10px;
+  min-height: 70vh;
+  padding-bottom: 2%;
+  margin-bottom: 60px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  color: white;
+  background-color: #22004D;
+  padding-left: 50px;
+  padding-top: 10px;
+  height: 30px;
+  border-top: 1px solid;
+  border-top-color: black;
+}
+
+.footer-loc {
+  display: inline-block;
+  margin-left: 0px;
+  }
+
+.footer-upd {
+  display: inline-block;
+  margin-left: 50%;
+  }
+table {
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+    margin-top: 10px;
+    margin-left: 20px;
+
+   }
+   th, td {
+    color: black;
+    border: 1px solid black; /* Параметры рамки */
+    text-align: center; /* Выравнивание по центру */
+    padding: 4px; /* Поля вокруг текста */
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
+   }
+   th {
+    background: #191970; /* Цвет фона ячейки */
+    color: white; /* Цвет текста */
+    vertical-align: bottom; /* Выравнивание по нижнему краю */
+    padding: 0; /* Убираем поля вокруг текста */
+   }
+
+table.operon-info {
+}
+
+table.atpase-info {
+  width: 600px;
+}
+
+
+
+td.small{
+  width: 70px;
+}
+
+td.seq {
+  max-width: 500px;
+  overflow: scroll;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+a.menu-link {
+  display: block;
+  height: 100%;
+}
+
+a:hover {
+  color: red;
+}
+
+p {
+  margin-left: 20px;
+}
+
+h2 {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+   </style>
+  </head>
+  <body>
+    <div class="header clearfix">
+      <div class="layout clearfix">
+        <div class="logo header-column"> "ATP-synthase - a splendid molecular machine" P.D.Boyer</div>
+        <div class="menu menu4 header-column">Contact</div>
+        <div class="menu header-column">About</div>
+        <div class="menu header-column"><a class="menu-link" href="/search">Search</a></div>
+        <div class="menu header-column"><a class="menu-link" href="/search">Home</a></div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      {% block content %}{% endblock %}
+    </div>
+    <div class="footer">
+      <div class="footer-loc">A.N. Belozersky Institute Of Physico-Chemical Biology</div>
+      <div class="footer-upd">Last updated: 07.2018</div>
+    </div>
+  </body>
+</html>
