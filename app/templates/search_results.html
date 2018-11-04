@@ -7,8 +7,10 @@
 	<tr valign="top"> 
 		<th>Organism name</th><th>Type</th><th>FoF1 number</th><th>Operon number</th><th>Subunit list</th>
 	</tr>
-{% for res in results %}
+{% for res in results.items %}
 {% include 'result.html' %}
 {% endfor %}
+{% if results.has_prev %}<a href="{{ url_for('search_results', page = results.prev_num, query=query) }}"><< Previous page </a>{% else %}<< Previous page {% endif %} | 
+{% if results.has_next %}<a href="{{ url_for('search_results', page = results.next_num, query=query) }}"> Next page >></a>{% else %} Next page >>{% endif %}
 </table>
 {% endblock %}
