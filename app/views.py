@@ -4,12 +4,15 @@ from app.models import ATPase, Organism
 from app import db
 from forms import SearchForm
 
-@app.route('/')
-@app.route('/index')
+@app.route('/', methods = ['GET', 'POST'])
+@app.route('/index', methods = ['GET', 'POST'])
 def index():
-    return render_template("index.html",
-        title = 'ATP-synthase operon structure',
-        user = 'The search is here')
+    form = SearchForm()
+    if form.validate_on_submit():
+    	return redirect(url_for('search_results', query = form.search.data))	
+    return render_template('searchform.html', 
+        title = 'The AOS database',
+        form = form)
 
 @app.route('/search', methods = ['GET', 'POST'])
 def search():
@@ -23,8 +26,9 @@ def search():
 from config import MAX_SEARCH_RESULTS
 
 @app.route('/search_results/<query>')
-def search_results(query):
-    results = Organism.query.whoosh_search(query, MAX_SEARCH_RESULTS).all()
+@app.route('/search_results/<query>/<int:page>')
+def search_results(query, page=1):
+    results = Organism.query.whoosh_search(query, MAX_SEARCH_RESULTS).paginate(page, 20, False)
     return render_template('search_results.html',
         query = query,
         results = results)

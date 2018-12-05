@@ -1,6 +1,7 @@
 from flask.ext.wtf import Form
-from wtforms import TextField, BooleanField
+from wtforms import TextField, BooleanField, SubmitField
 from wtforms.validators import Required
 
 class SearchForm(Form):
-    search = TextField('search_db', validators = [Required()])
+    search = TextField('Type organism name:', validators = [Required()])
+    submit_button = SubmitField('Search')

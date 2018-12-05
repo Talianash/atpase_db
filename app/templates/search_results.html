@@ -2,13 +2,28 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Search results for "{{query}}":</h2>
-<table class="search_res_organism">
+<section id="search-res-section" class="bg-light">
+<div class="inner-table col-md-10 mx-auto">
+{% if results != [] %}
+<h2 class="pb-3">Search results for "{{query}}":</h2>
+<table class="py-5 table table-light table-hover">
+	<thead class="thead-dark">
 	<tr valign="top"> 
 		<th>Organism name</th><th>Type</th><th>FoF1 number</th><th>Operon number</th><th>Subunit list</th>
 	</tr>
+	</thead>
+	<tbody>
 {% for res in results %}
+{% if res.fof1_number != 0 %}
 {% include 'result.html' %}
+{% endif %}
 {% endfor %}
+{% if results.has_prev %}<a href="{{ url_for('search_results', page = results.prev_num, query=query) }}"><< Previous page </a>{% else %}<< Previous page {% endif %} | 
+{% if results.has_next %}<a href="{{ url_for('search_results', page = results.next_num, query=query) }}"> Next page >></a>{% else %} Next page >>{% endif %}
 </table>
+{% else %}
+<h2>Sorry, nothing was faound</h2>
+{% endif %}
+</div>
+</section>
 {% endblock %}

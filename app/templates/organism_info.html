@@ -2,23 +2,38 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2 class="bg-success">{{org.name}}</h1>
+<section id="org-info-section" class="bg-light">
+<div class="col-md-10 mx-auto">
+<h2>{{org.name}}</h2>
 <p>Taxonomy: {{org.taxonomy}}</p>
-<table class="atpase-info">
+<div class="atpases col-md-10">
+<table class="table">
     {% for j in org.atpase %}
 	<tr valign="top"> 
     	<td>{{j.fof1_type}}</td><td>{% for u in j.operon %} operon {{u.operon_type}}; {% endfor %}</td><td>{{j.subunit_list}}</td>
 	</tr>
 	{% endfor%}
+</table>
+</div>
+</div>
+
+
 {% for i in org.operon %}
-<table class="operon-info">
-    <caption><h3>ATP-synthase type: {{i.enzyme.fof1_type}}, operon type: {{i.operon_type}}</h3></caption>
-	<tr valign="top"> 
+<div class="inner-op-table col-md-10 mx-auto pb-3">
+	<h3>ATP-synthase type: {{i.enzyme.fof1_type}}, operon type: {{i.operon_type}}</h3>
+<table class="table">
+	<thead class="thead-dark">
+	<tr> 
 		<th>Subunit</th><th>Start</th><th>End</th><th>Sequence</th>
 	</tr>
+	</thead>
+	<tbody>
 {% for k in i.sequence %}
 {% include 'seq.html' %}
 {% endfor %}
-{% endfor %}
+</tbody>
 </table>
+</div>
+{% endfor %}
+</section>
 {% endblock %}
