@@ -26,9 +26,8 @@ def search():
 from config import MAX_SEARCH_RESULTS
 
 @app.route('/search_results/<query>')
-@app.route('/search_results/<query>/<int:page>')
-def search_results(query, page=1):
-    results = Organism.query.whoosh_search(query, MAX_SEARCH_RESULTS).paginate(page, 20, False)
+def search_results(query):
+    results = Organism.query.whoosh_search(query, MAX_SEARCH_RESULTS).all()
     return render_template('search_results.html',
         query = query,
         results = results)
